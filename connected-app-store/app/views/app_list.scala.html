@@ -1,0 +1,37 @@
+@(applications : Seq[Application], name:String)
+
+@base(name) {
+  
+    <main class="main-content">       
+          <div class="container">
+            <header class="center">              
+              <h2>@name</h2>
+              <hr>              
+            </header>  
+  
+            <div class="row gap-y">
+              <!-- Application category loop -->
+              @for(application <- applications){                
+                <div class="wrapper">
+                    <img class="img" src="@{routes.Assets.versioned("img/"+application.image)}" alt="@application.name">
+                    <div class="inner">
+                        <a href="@{routes.HomeController.appDetail(name,application.name)}"><h5>@application.name</h5> </a>
+                    </div>
+                    <div class="right">                      
+                        <a class="btn btn-primary btn-position" href="#">Download</a>
+                    </div>
+                    <div class="right">
+                      Rating:
+                      @for( value <- 1 to application.rating ){
+                        <span class="star-style">&starf;</span>                                         
+                      }                                                
+                            <br/>                         
+                      <small>Size: @application.size mb</small>
+                    </div>                                                                    
+            </div>
+            
+            }
+            </div>
+          </div>       
+      </main>
+}        

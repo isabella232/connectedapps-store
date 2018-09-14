@@ -1,0 +1,13 @@
+
+GET     /                                 controllers.HomeController.index
+
+GET     /app/:name/:category         controllers.HomeController.appList( name:String, category: java.util.UUID )
+
+GET     /app/detail/:category/:name     controllers.HomeController.appDetail( category: String, name: String )
+
+#POST  /:name                         controllers.HomeController.search(name: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+#GET    /*                              controllers.HomeController.error
