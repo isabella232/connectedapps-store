@@ -1,0 +1,96 @@
+.myHeader{
+    background-color: #81b441;
+  }
+
+  form{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  #header{
+    background-image: url(../img/vector/20.png);
+    
+  }
+
+  #category-card{
+    background-color: #464646;
+  }
+
+  #nav_position{
+    position: relative;
+    top: 0;
+  }
+
+  .center{
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+
+  .wrapper{
+    border: 3px solid rgba(187, 164, 164,0);
+    display: block;
+    box-sizing: border-box;
+    height: 80px;
+    width: 80%;
+    margin-left: 10%;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgb(233, 200, 200);
+    margin-top: 12px;    
+    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+    }
+
+.btn-position{
+    position: relative;
+    top: 12px;
+}
+
+.img{
+    margin-top: 5px;
+    width: 100px;
+    height: 98%;    
+    padding: 2px;
+    padding-bottom: 5px;
+    float: left;
+    margin-right: 3px;
+}
+
+.right{
+    float: right;
+    height: 100%;
+    border-left: 2px solid black;
+    padding-top: -40px;  
+    box-sizing: border-box;
+    text-align: center; 
+    align-content: center;   
+    padding-top: 6px;
+    width: 20%;
+    word-wrap: break-word;
+}
+
+.inner{
+    float: left;
+    position: relative;
+    top: 25px;
+    height: 100%;
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+.star-style{
+  font-size:150%;
+  color:yellow;
+}
+
+.description{
+  font-family: sans-serif;
+  color: black;
+}
+
+.apperance{
+  color: white;  
+  font-family: sans-serif;
+  font-size: 15pt;
+  font-weight: bold;
+}

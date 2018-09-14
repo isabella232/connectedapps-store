@@ -1,0 +1,24 @@
+@(application : Application, name:String)
+
+@base(name + " details") {
+  
+    <main class="main-content">       
+          <div class="container">
+            <header class="center">              
+              <h2>@name</h2>
+              <hr>              
+            </header>  
+  
+            <div class="description">
+                    <h2>@application.name.toUpperCase</h2><br>
+                    <p>@application.description</p>
+                    <br>
+                    <h3>Application functionalities</h3>
+                    <p>@application.longDescription</p>
+                    <br>
+                    <a class="btn btn-lg btn-round btn-primary shadow-3" href="#">Download</a>
+                    <a class="btn btn-lg btn-round btn-info shadow-3" href="@{routes.HomeController.appList(name,application.appCategory)}">Back</a>
+                  </div>
+          </div>       
+      </main>
+}        
